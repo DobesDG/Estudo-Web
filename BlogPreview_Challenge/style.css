@@ -7,7 +7,6 @@
     text-decoration: none;
 }
 
-
 .main {
     display: flex;
     flex-direction: column;
@@ -25,17 +24,102 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    padding: 16px;
+    align-items: start;
+    padding: 24px;
     background-color: #FFFFFF;
     width: 384px;
-    height: 522px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px;
 }
 
 .img-div{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 200px;
 }
 
+.ilustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
 
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.buttonLike-txt {
+    background-color: #F4D04E;
+    width:fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.buttonLike-txt, .name {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.title:hover{
+    color: #F4D04E;
+    cursor: pointer ;
+}
+
+.pubInfo{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 0px;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6B6B6B;
+    padding-top: 12px ;
+}
+
+.avatar-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatarName-div {
+    padding-left: 12px;
+}
+
+.attribution{
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .mainsection{
+        width: 327px;
+    }
+
+    .buttonLike-txt, .name {
+        font-size: 12px;
+    }
+    
+    .title{
+        font-size: 20px;
+    }
+    .pubInfo{
+        font-size: 14px;
+    }
+    
+    .paragraph {
+        font-size: 16px;
+    }
+}
